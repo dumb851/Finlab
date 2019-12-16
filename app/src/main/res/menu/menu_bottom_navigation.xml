@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_wallet"
+        android:icon="@drawable/ic_wallet"
+        android:title="@string/title_wallet" />
+
+    <item
+        android:id="@+id/navigation_stat"
+        android:icon="@drawable/ic_stat"
+        android:title="@string/title_stat" />
+
+    <item
+        android:id="@+id/navigation_calendar"
+        android:icon="@drawable/ic_calendar"
+        android:title="@string/title_calendar" />
+
+    <item
+        android:id="@+id/navigation_budget"
+        android:icon="@drawable/ic_budget"
+        android:title="@string/title_budget" />
+
+    <item
+        android:id="@+id/navigation_category"
+        android:icon="@drawable/ic_category"
+        android:title="@string/title_category" />
+
+
+</menu>
