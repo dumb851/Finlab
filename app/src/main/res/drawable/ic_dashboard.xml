@@ -1,0 +1,46 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="28dp"
+    android:viewportWidth="40"
+    android:viewportHeight="28">
+  <path
+      android:pathData="M4,6L6,6A2,2 0,0 1,8 8L8,25A2,2 0,0 1,6 27L4,27A2,2 0,0 1,2 25L2,8A2,2 0,0 1,4 6z"
+      android:strokeWidth="2"
+      android:fillColor="#707070"
+      android:strokeColor="#00000000"/>
+  <path
+      android:pathData="M4,7L6,7A1,1 0,0 1,7 8L7,25A1,1 0,0 1,6 26L4,26A1,1 0,0 1,3 25L3,8A1,1 0,0 1,4 7z"
+      android:strokeWidth="2"
+      android:fillColor="#00000000"
+      android:strokeColor="#707070"/>
+  <path
+      android:pathData="M14,14L16,14A2,2 0,0 1,18 16L18,25A2,2 0,0 1,16 27L14,27A2,2 0,0 1,12 25L12,16A2,2 0,0 1,14 14z"
+      android:strokeWidth="2"
+      android:fillColor="#707070"
+      android:strokeColor="#00000000"/>
+  <path
+      android:pathData="M14,15L16,15A1,1 0,0 1,17 16L17,25A1,1 0,0 1,16 26L14,26A1,1 0,0 1,13 25L13,16A1,1 0,0 1,14 15z"
+      android:strokeWidth="2"
+      android:fillColor="#00000000"
+      android:strokeColor="#707070"/>
+  <path
+      android:pathData="M34,10L36,10A2,2 0,0 1,38 12L38,25A2,2 0,0 1,36 27L34,27A2,2 0,0 1,32 25L32,12A2,2 0,0 1,34 10z"
+      android:strokeWidth="2"
+      android:fillColor="#707070"
+      android:strokeColor="#00000000"/>
+  <path
+      android:pathData="M34,11L36,11A1,1 0,0 1,37 12L37,25A1,1 0,0 1,36 26L34,26A1,1 0,0 1,33 25L33,12A1,1 0,0 1,34 11z"
+      android:strokeWidth="2"
+      android:fillColor="#00000000"
+      android:strokeColor="#707070"/>
+  <path
+      android:pathData="M24,2L26,2A2,2 0,0 1,28 4L28,25A2,2 0,0 1,26 27L24,27A2,2 0,0 1,22 25L22,4A2,2 0,0 1,24 2z"
+      android:strokeWidth="2"
+      android:fillColor="#707070"
+      android:strokeColor="#00000000"/>
+  <path
+      android:pathData="M24,3L26,3A1,1 0,0 1,27 4L27,25A1,1 0,0 1,26 26L24,26A1,1 0,0 1,23 25L23,4A1,1 0,0 1,24 3z"
+      android:strokeWidth="2"
+      android:fillColor="#00000000"
+      android:strokeColor="#707070"/>
+</vector>
