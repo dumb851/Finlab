@@ -35,7 +35,7 @@
             </com.google.android.material.appbar.AppBarLayout>
 
             <fragment
-                android:id="@+id/main_nav_host"
+                android:id="@+id/main_nav_host_fragment"
                 android:name="androidx.navigation.fragment.NavHostFragment"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -43,15 +43,26 @@
                 app:defaultNavHost="true"
                 app:navGraph="@navigation/nav_graph" />
 
+<!--            app:labelVisibilityMode="unlabeled"-->
             <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/main_bottom_navigation_view"
+                android:id="@+id/bottom_navigation_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="?android:attr/windowBackground"
-                app:labelVisibilityMode="labeled"
-                app:menu="@menu/menu_bottom_navigation" />
+                app:labelVisibilityMode="unlabeled"
+                app:menu="@menu/menu_bottom_navigation"
+                />
 
         </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/burger_navigation_view"
+            style="@style/Widget.Design.NavigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/burger_header"
+            app:menu="@menu/menu_burger"/>
 
     </androidx.drawerlayout.widget.DrawerLayout>
 

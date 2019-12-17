@@ -7,6 +7,6 @@
     <fragment
         android:id="@+id/accounts_fragment"
         android:name="com.example.finlab.ui.accounts.AccountsFragment"
-        android:label="fragment_accounts"
+        android:label="@string/title_account"
         tools:layout="@layout/fragment_accounts" />
 </navigation>
