@@ -2,11 +2,36 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/accounts_fragment">
+    app:startDestination="@id/navigation_accounts">
 
     <fragment
-        android:id="@+id/accounts_fragment"
-        android:name="com.example.finlab.ui.accounts.AccountsFragment"
+        android:id="@+id/navigation_accounts"
+        android:name="com.example.finlab.ui.account.AccountsFragment"
         android:label="@string/title_account"
         tools:layout="@layout/fragment_accounts" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.finlab.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_calendar"
+        android:name="com.example.finlab.ui.calendar.CalendarFragment"
+        android:label="@string/title_calendar"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/navigation_budgets"
+        android:name="com.example.finlab.ui.budget.BudgetsFragment"
+        android:label="@string/title_budget"
+        tools:layout="@layout/fragment_budgets" />
+
+    <fragment
+        android:id="@+id/navigation_categories"
+        android:name="com.example.finlab.ui.category.CategoriesFragment"
+        android:label="@string/title_category"
+        tools:layout="@layout/fragment_categories" />
+
 </navigation>

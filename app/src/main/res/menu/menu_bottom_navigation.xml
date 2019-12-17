@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!--Each item id should be same as in the nav_graph fragment id-->
+
     <item
-        android:id="@+id/navigation_wallet"
+        android:id="@+id/navigation_accounts"
         android:icon="@drawable/ic_account"
         android:title="@string/title_account" />
 
     <item
-        android:id="@+id/navigation_stat"
+        android:id="@+id/navigation_dashboard"
         android:icon="@drawable/ic_dashboard"
         android:title="@string/title_dashboard" />
 
@@ -17,12 +19,12 @@
         android:title="@string/title_calendar" />
 
     <item
-        android:id="@+id/navigation_budget"
+        android:id="@+id/navigation_budgets"
         android:icon="@drawable/ic_budget"
         android:title="@string/title_budget" />
 
     <item
-        android:id="@+id/navigation_category"
+        android:id="@+id/navigation_categories"
         android:icon="@drawable/ic_category"
         android:title="@string/title_category" />
 

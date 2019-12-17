@@ -43,11 +43,13 @@
                 app:defaultNavHost="true"
                 app:navGraph="@navigation/nav_graph" />
 
-<!--            app:labelVisibilityMode="unlabeled"-->
+<!--         //!   app:labelVisibilityMode="labeled"-->
+<!--         //!   app:itemIconSize="34dp"-->
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottom_navigation_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:itemIconSize="31dp"
                 android:background="?android:attr/windowBackground"
                 app:labelVisibilityMode="unlabeled"
                 app:menu="@menu/menu_bottom_navigation"
