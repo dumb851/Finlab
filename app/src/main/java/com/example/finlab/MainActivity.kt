@@ -3,6 +3,7 @@ package com.example.finlab
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import android.view.View
 import androidx.core.view.GravityCompat
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
@@ -17,6 +18,14 @@ class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
     private lateinit var appBarConfiguration: AppBarConfiguration
 
+    private var currentTopLevelDestinationId: Int = R.id.navigation_accounts
+    private val topLevelDestinationIds = mutableSetOf(R.id.navigation_accounts,
+//        R.id.navigation_dashboard,
+//        R.id.navigation_calendar,
+//        R.id.navigation_budgets,
+        R.id.navigation_categories
+    )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,8 +35,7 @@ class MainActivity : AppCompatActivity() {
         navController = findNavController(R.id.main_nav_host_fragment)
         appBarConfiguration = AppBarConfiguration.
             //Pass the ids of fragments from nav_graph which you d'ont want to show back button in toolbar
-            Builder(R.id.navigation_accounts, R.id.navigation_dashboard, R.id.navigation_calendar,
-                R.id.navigation_budgets, R.id.navigation_categories)
+            Builder(topLevelDestinationIds)
             //Pass the drawer layout id from activity xml
             .setDrawerLayout(main_drawer_layout)
             .build()
@@ -37,6 +45,31 @@ class MainActivity : AppCompatActivity() {
 
         burger_navigation_view.setupWithNavController(navController)
         bottom_navigation_view.setupWithNavController(navController)
+
+        setOnDestinationChanged()
+    }
+
+    private fun setOnDestinationChanged() {
+
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+
+            if (destination.id in topLevelDestinationIds) {
+                currentTopLevelDestinationId = destination.id
+            }
+
+            when (destination.id) {
+                R.id.navigation_settings -> hideBottomNavigation()
+                else -> showBottomNavigation()
+            }
+        }
+    }
+
+    private fun showBottomNavigation() {
+        bottom_navigation_view.visibility = View.VISIBLE
+    }
+
+    private fun hideBottomNavigation() {
+        bottom_navigation_view.visibility = View.GONE
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
