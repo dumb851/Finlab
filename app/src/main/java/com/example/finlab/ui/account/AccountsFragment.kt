@@ -77,7 +77,7 @@ class AccountsFragment : Fragment() {
         accounts.add(Account("demo 16", 444.8.toBigDecimal()))
 
 
-        adapter = AccountsRecyclerAdapter(accounts)
+        adapter = AccountsRecyclerAdapter(accounts, context!!)
 
 
 
